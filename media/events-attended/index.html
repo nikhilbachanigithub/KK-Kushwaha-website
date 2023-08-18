@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Event Showcase Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .header1 {
+        background-color: #303c6c;
+        color: #1ee6aa;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      main {
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      .event-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: -10px;
+      }
+
+      .event {
+        flex-basis: calc(33.33% - 20px);
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        transition: transform 0.3s;
+      }
+
+      .event:hover {
+        transform: scale(1.05);
+      }
+
+      .event-background img {
+        width: 100%;
+        height: auto;
+      }
+
+      .event-content {
+        padding: 10px;
+      }
+
+      h2 {
+        color: #333;
+        margin: 10px 0;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      @media (max-width: 768px) {
+        /* Styles for screens up to 768px wide */
+        .event {
+          flex-basis: calc(50% - 20px);
+        }
+      }
+
+      @media (max-width: 480px) {
+        /* Styles for screens up to 480px wide */
+        .event {
+          flex-basis: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+      <div class="continer">
+
+    <header class="header active">
+
+        <div class="logo">
+          <img
+            class="img"
+            src="https://github.com/Tanishka-22/KK-Kushwah/blob/main/logos/jec%20logo.png?raw=true"
+            alt=""
+          />
+        </div>
+
+      <div class="mobile-navbar-btn">
+          <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+          <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+
+        <div class="upper">
+
+          <ul class= "upper-ul">
+
+            <li>
+              <div>
+                <a class="u" href="/index.html"
+                  ><div class="d">Home</div>
+                </a>
+              </div>
+            </li>
+            
+
+              <!-- drop down menu -->
+
+              <li>
+              <a class="u" href="#">
+
+                <div class="dropdown">
+
+                    <div class="d">Research</div>
+                    <div class="dropdown-content">
+                        
+                        <a href="/research/books-and-books-chapter/index.html">Books and Books Chapters</a>
+                        <a href="/research/international-journals/index.html">International journals</a>
+                        <a href="/research/patents/index.html">Patents</a>
+                        <a href="/research/external-projects/index.html">External Projects</a>
+                        <a href="/research/research-supervision/index.html">PG Projects and External Supervision</a>
+                        <a href="/research/PHD-supervision/index.html">PHD Supervision</a>
+                      </div>
+                </div>
+              </a>
+            </li>
+            
+
+
+            <li>
+              <a class="u" href="/lab-resources/index.html">
+                <div class="d">Lab Resources</div>
+              </a>
+            </li>
+
+
+            <li>
+              <a class="u" href="/media/index.html"
+                ><div class="d">Media</div>
+              </a>
+            </li>
+
+
+            <li>
+              <a class="u" href="/social-activities/index.html">
+                <div class="d">Social Activities</div>
+              </a>
+            </li>
+
+
+            <li>
+              <a class="u" href="/contact/index.html">
+                <div class="d">Contact</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+          <div class="header1">
+            <h1>CONFERENCES / WEBINARS ATTENDED</h1>
+          </div>
+    <main>
+      <div class="event-container">
+        <div class="event">
+          <div class="event-background">
+            <img src="images/org36.jpeg" alt="Event 1" />
+          </div>
+          <div class="event-content">
+            <h2>Event 1</h2>
+            <p>
+              Awareness Program related to Women Empowerment in 75th Year of
+              Independence" was at JEC, Jabalpur on 20/01/2023.Various
+              activities like quizzes and nukkad natak were held based on
+              Women's Rights and various other programs of the government
+            </p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-background">
+            <img src="images/org20.jpeg" alt="Event 2" />
+          </div>
+          <div class="event-content">
+            <h2>Event 2</h2>
+            <p>
+              National Webinar on "Emerging Materials for Launch Vehicle
+              (Rocket) Technology" organised on 14/10/2022 under Aatma Nirbhar
+              Madhya Pradesh.
+            </p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-background">
+            <img src="images/org31.jpeg" alt="Event 3" />
+          </div>
+          <div class="event-content">
+            <h2>Event 3</h2>
+            <p>
+              भौतिकी विभाग में एमएससी एप्लाइड भौतिकी के विद्यार्थियों व स्टाफ के
+              द्वारा नववर्ष मनाया गया, कार्यक्रम में प्राचार्य महोदय सहित अन्य
+              वरिष्ठ अधिकारी गण उपस्थित रहे, इस दौरान विद्यार्थियों द्वारा तैयार
+              की गए E-Calendar 2023 (जिसमे विभाग की कई एक्टिविटी को समाहित किया
+              गया है) का विमोचन भी गणमान्य अधिकारियों द्वारा किया गया, सभी को
+              धन्यवाद ज्ञापित है।
+            </p>
+          </div>
+        </div>
+        <!-- Add more event cards here -->
+        <div class="event">
+          <div class="event-background">
+            <img src="images/org24.jpg" alt="Event 3" />
+          </div>
+          <div class="event-content">
+            <h2>Event 4</h2>
+            <p>
+              National Webinar on "Emerging Materials for Launch Vehicle
+              (Rocket) Technology" organised on 14/10/2022 under Aatma Nirbhar
+              Madhya Pradesh.
+            </p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-background">
+            <img src="images/slider15.jpg" alt="Event 3" />
+          </div>
+          <div class="event-content">
+            <h2>Event 5</h2>
+            <p>Pre conference of Renewable Energy Conclave held.</p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-background">
+            <img src="images/org18.jfif" alt="Event 3" />
+          </div>
+          <div class="event-content">
+            <h2>Event 6</h2>
+            <p>Science day celebration</p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-background">
+            <img src="images/slider18.jpg" alt="Event 3" />
+          </div>
+          <div class="event-content">
+            <h2>Event 7</h2>
+            <p>
+              Two days colloquium on nanoscience and technology 7-8 nov 2019
+              organized by Department of Applied Physics JEC,Jabalpur
+            </p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-background">
+            <img src="images/org5.jfif" alt="Event 3" />
+          </div>
+          <div class="event-content">
+            <h2>Event 8</h2>
+            <p>
+              An MOU has been signed between Department of Applied Physics, JEC
+              Jabalpur and Department of Post Graduate Studies in Physics &
+              Electronics, RDVV jabalpur on 17.8.22 in VC chamber, RDVV
+              Jabalpur.
+            </p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-background">
+            <img src="images/slider20.jpg" alt="Event 3" />
+          </div>
+          <div class="event-content">
+            <h2>Event 9</h2>
+            <p>
+              Workshop was organised by Department Of Applied Physics & Indian
+              Association of Physics Teachers (IAPT). Thanks to college
+              administration and IAPT.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+      <script src="script.js"></script>
+
+    <footer>
+        <div class="footer-section">
+          <h10>Address</h10>
+          <div class="x">
+            <p>Q.N. E-4, Jec Staff Colony, Gokalpur,<br> Jabalpur (M.P.) 482011</p>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h14>Phone</h14>
+          <p>09826668891, 07987488829</p>
+        </div>
+        <div class="footer-section">
+          <h11>Email</h11>
+          <p>Kamal_kushwah2005@yahoo.com,<br> kkushwaha@jecjabalpur.ac.in</p>
+        </div>
+        <div class="footer-section">
+          <h12>Follow Us</h12>
+          <ul class="social-icons">
+            <li><a href="https://www.linkedin.com/in/dr-kamal-kumar-kushwah-12b1061a1/"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="https://www.facebook.com/kamalkumar.kushwaha.9"><img src="images/facebook.png" alt="Facebook"></a></li>
+            <li><a href="[Twitter Link]"><img src="images/twitter.png" alt="Twitter"></a></li>
+            <li><a href="https://www.instagram.com/kushwahakamalkumar/"><img src="images/instagram.png" alt="Instagram"></a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h13>Connect with  team</h13>
+          <ul class="creators-list">
+            <li><a href="https://www.linkedin.com/in/harsh-sharma-5439661b0/">Harsh</a></li>
+            <li><a href="https://www.linkedin.com/in/anish-mahore-67659824a/">Anish</a></li>
+            <li><a href="https://www.instagram.com/invites/contact/?i=jtg3712pe2yw&utm_content=ri3iwht">Nikhil</a></li>
+          </ul>
+        </div>
+      </footer>
+
+
+
+
+  </body>
+</html>
