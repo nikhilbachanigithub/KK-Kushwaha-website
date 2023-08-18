@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Event Showcase Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px 0;
+        background-color: #ffffff;
+      }
+
+      .header1 {
+        background-color: #303c6c;
+        color: #1ee6aa;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      main {
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      .event-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: -10px;
+      }
+
+      .event {
+        flex-basis: calc(33.33% - 20px);
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        transition: transform 0.3s;
+      }
+
+      .event:hover {
+        transform: scale(1.05);
+      }
+
+      .event-background img {
+        width: 100%;
+        height: auto;
+      }
+
+      .event-content {
+        padding: 10px;
+      }
+
+      h2 {
+        color: #333;
+        margin: 10px 0;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      @media (max-width: 768px) {
+        /* Styles for screens up to 768px wide */
+        .event {
+          flex-basis: calc(50% - 20px);
+        }
+      }
+
+      @media (max-width: 480px) {
+        /* Styles for screens up to 480px wide */
+        .event {
+          flex-basis: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    
+      <div class="continer">
+
+    <header class="header active">
+
+        <div class="logo">
+          <img
+            class="img"
+            src="https://github.com/Tanishka-22/KK-Kushwah/blob/main/logos/jec%20logo.png?raw=true"
+            alt=""
+          />
+        </div>
+
+      <div class="mobile-navbar-btn">
+          <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+          <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+
+        <div class="upper">
+
+          <ul class= "upper-ul">
+
+            <li>
+              <div>
+                <a class="u" href="/index.html"
+                  ><div class="d">Home</div>
+                </a>
+              </div>
+            </li>
+            
+
+              <!-- drop down menu -->
+
+              <li>
+              <a class="u" href="#">
+
+                <div class="dropdown">
+
+                    <div class="d">Research</div>
+                    <div class="dropdown-content">
+                        
+                        <a href="/research/books-and-books-chapter/index.html">Books and Books Chapters</a>
+                        <a href="/research/international-journals/index.html">International journals</a>
+                        <a href="/research/patents/index.html">Patents</a>
+                        <a href="/research/external-projects/index.html">External Projects</a>
+                        <a href="/research/research-supervision/index.html">PG Projects and External Supervision</a>
+                        <a href="/research/PHD-supervision/index.html">PHD Supervision</a>
+                      </div>
+                </div>
+              </a>
+            </li>
+            
+
+
+            <li>
+              <a class="u" href="/lab-resources/index.html">
+                <div class="d">Lab Resources</div>
+              </a>
+            </li>
+
+
+            <li>
+              <a class="u" href="/media/index.html"
+                ><div class="d">Media</div>
+              </a>
+            </li>
+
+
+            <li>
+              <a class="u" href="/social-activities/index.html">
+                <div class="d">Social Activities</div>
+              </a>
+            </li>
+
+
+            <li>
+              <a class="u" href="/contact/index.html">
+                <div class="d">Contact</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+    <div class="header1">
+      <h1>CONFERENCES / WEBINARS ORGANISED</h1>
+    </div>
+    <main>
+      <div class="event-container">
+        <div class="event">
+          <div class="event-background">
+            <img src="images/attend16.jpeg" alt="Event 1" />
+          </div>
+          <div class="event-content">
+            <h2>Event 1</h2>
+            <p>
+              माननीय मुख्यमंत्री जी का प्रबुद्धजनों से संवाद कार्यक्रम" जो
+              माननीय श्री शिवराज सिंह चौहान के मुख्य आतिथ्य एवम माननीय प्रो श्री
+              सचिन चतुर्वेदी, उपाध्यक्ष मप्र राज्य नीति एवम योजना आयोग के साथ
+              हमारे सभी जनप्रतिनिधियों एवम प्रबुद्धजनों की उपस्थिति में सम्पन्न
+              हुआ। कार्यक्रम में रानीदुर्गावती विश्विद्यालय के कुलपति माननीय
+              प्रो कपिल देव मिश्र के साथ भाग लेने का अवसर प्राप्त हुआ।
+            </p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-background">
+            <img src="images/attend12.jpg" alt="Event 2" />
+          </div>
+          <div class="event-content">
+            <h2>Event 2</h2>
+            <p>
+              जिला निर्वाचन अधिकारी, जबलपुर की मतदाता जागरूकता समिति कलेक्ट्रेट
+              जबलपुर द्वारा श्रीराम इंजीनियरिंग कॉलेज जबलपुर में आयोजित जिला
+              स्तरीय रोल प्ले प्रतियोगीता में "विशिष्ट अतिथि "के रूप में
+              प्रतिभागियों का उत्साहबर्धन किया |
+            </p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-background">
+            <img src="images/attend9.jpg" alt="Event 3" />
+          </div>
+          <div class="event-content">
+            <h2>Event 3</h2>
+            <p>
+              Meeting honourable Padma Shri H. C. Verma Sir, Former Professor,
+              IIT Kanpur at the Inaugural function of Innovation Hub, Shri
+              Vaishnav Vidyapeeth Vishwavidyalaya, Indore, MP.
+            </p>
+          </div>
+        </div>
+        <!-- Add more event cards here -->
+        <div class="event">
+          <div class="event-background">
+            <img src="images/attend6.jfif" alt="Event 3" />
+          </div>
+          <div class="event-content">
+            <h2>Event 4</h2>
+            <p>
+              Two days colloquium on nanoscience and technology 7-8 nov 2019
+              organized by Department of Applied Physics JEC, Jabalpur
+            </p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-background">
+            <img src="images/slider13.jpg" alt="Event 3" />
+          </div>
+          <div class="event-content">
+            <h2>Event 5</h2>
+            <p>Pre conference of Renewable Energy Conclave held.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+      <script src="script.js"></script>
+
+    <footer>
+        <div class="footer-section">
+          <h10>Address</h10>
+          <div class="x">
+            <p>Q.N. E-4, Jec Staff Colony, Gokalpur,<br> Jabalpur (M.P.) 482011</p>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h14>Phone</h14>
+          <p>09826668891, 07987488829</p>
+        </div>
+        <div class="footer-section">
+          <h11>Email</h11>
+          <p>Kamal_kushwah2005@yahoo.com,<br> kkushwaha@jecjabalpur.ac.in</p>
+        </div>
+        <div class="footer-section">
+          <h12>Follow Us</h12>
+          <ul class="social-icons">
+            <li><a href="https://www.linkedin.com/in/dr-kamal-kumar-kushwah-12b1061a1/"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="https://www.facebook.com/kamalkumar.kushwaha.9"><img src="images/facebook.png" alt="Facebook"></a></li>
+            <li><a href="[Twitter Link]"><img src="images/twitter.png" alt="Twitter"></a></li>
+            <li><a href="https://www.instagram.com/kushwahakamalkumar/"><img src="images/instagram.png" alt="Instagram"></a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h13>Connect with  team</h13>
+          <ul class="creators-list">
+            <li><a href="https://www.linkedin.com/in/harsh-sharma-5439661b0/">Harsh</a></li>
+            <li><a href="https://www.linkedin.com/in/anish-mahore-67659824a/">Anish</a></li>
+            <li><a href="https://www.instagram.com/invites/contact/?i=jtg3712pe2yw&utm_content=ri3iwht">Nikhil</a></li>
+          </ul>
+        </div>
+      </footer>
+
+
+
+  </body>
+</html>
