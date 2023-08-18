@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Website Example</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+    
+</head>
+<div class="continer">
+
+    <header class="header active">
+
+        <div class="logo">
+          <img
+            class="img"
+            src="https://github.com/Tanishka-22/KK-Kushwah/blob/main/logos/jec%20logo.png?raw=true"
+            alt=""
+          />
+        </div>
+
+      <div class="mobile-navbar-btn">
+          <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+          <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+
+        <div class="upper">
+
+          <ul class= "upper-ul">
+
+            <li>
+              <div>
+                <a class="u" href="/index.html"
+                  ><div class="d">Home</div>
+                </a>
+              </div>
+            </li>
+            
+
+              <!-- drop down menu -->
+
+              <li>
+              <a class="u" href="#">
+
+                <div class="dropdown">
+
+                    <div class="d">Research</div>
+                    <div class="dropdown-content">
+                        
+                        <a href="../research/books-and-books-chapter/index.html">Books and Books Chapters</a>
+                        <a href="../research/international-journals/index.html">International journals</a>
+                        <a href="../research/patents/index.html">Patents</a>
+                        <a href="../research/external-projects/index.html">External Projects</a>
+                        <a href="../research/research-supervision/index.html">PG Projects and External Supervision</a>
+                        <a href="../research/PHD-supervision/index.html">PHD Supervision</a>
+                      </div>
+                </div>
+              </a>
+            </li>
+            
+
+
+            <li>
+              <a class="u" href="../lab-resources/index.html">
+                <div class="d">Lab Resources</div>
+              </a>
+            </li>
+
+
+            <li>
+              <a class="u" href="../media/index.html"
+                ><div class="d">Media</div>
+              </a>
+            </li>
+
+
+            <li>
+              <a class="u" href="../social-activities/index.html">
+                <div class="d">Social Activities</div>
+              </a>
+            </li>
+
+
+            <li>
+              <a class="u" href="../contact/index.html">
+                <div class="d">Contact</div>
+              </a>
+            </li>
+          </ul>
+
+          <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+          ></script>
+
+          <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+          ></script>
+
+          <script >
+            const mobile_nav = document.querySelector(".mobile-navbar-btn");
+            const nav_header = document.querySelector(".header");
+
+             const toggleNavbar = () => {
+               nav_header.classList.toggle("active");
+                     };
+
+                 mobile_nav.addEventListener("click", () => toggleNavbar());
+          </script>
+        </div>
+      </header>
+  
+</div>
+<body>
+  <h1>Social Activities</h1>
+  <div class="container">
+    <div class="row">
+      <div class="left-image">
+        <img src="images/phy.png" alt="Left Image">
+      </div>
+      <div class="slider-window">
+        <img class="slider-image active" src="images/attend16.jpeg" alt="Slider Image 1">
+        <img class="slider-image" src="images/org18.jfif" alt="Slider Image 2">
+        <img class="slider-image" src="images/org20.jpeg" alt="Slider Image 3">
+        <img class="slider-image" src="images/org24.jpg" alt="Slider Image 4">
+        <img class="slider-image" src="images/org31.jpeg" alt="Slider Image 5">
+        <img class="slider-image" src="images/org34.jpeg" alt="Slider Image 6">
+        <img class="slider-image" src="images/org36.jpeg" alt="Slider Image 7">
+        <div class="slider-prev">&#8249;</div>
+        <div class="slider-next">&#8250;</div>
+      </div>
+      <div class="right-image">
+        <img src="images/org5.jfif" alt="Right Image">
+      </div>
+    </div>
+    <div class="content-box">
+      <h2>"Education Is Not A Privilege,
+        It Is A Right"</h2>
+      <div class="inner-box">
+        <p>I Dr. Kamal Kumar Kushwah being the President of the Vigyan Club at Aatma Nirbhar Bharat have been a part of a kind amount of social activities in works in my career. I taught at a few primary government school to the children in need of education. I participated in social activities such as clothes and stationery distribution with a couple of NGOs which also included Kaarvaan- an NGO by JEC students itself. I will also part of movements which demanded an equal rights of education for all the children in not the best condition free of cost and have done my best to support it. Recently last years childrens day was celebrated by a JEC family with the students of Government Primary School of Gokulpur here in Jabalpur. The celebration ended with distribution of pencil boxes to the students there. It was a very nice and kind opportunity which I was given a chance to be a part of. Also, in the past under Municipal Corporation of Jabalpur events have an organised and once such event called "Aasmano Se Aage" was organised and around 150 science students and a few students with geography major were presented with small experiences, which they enjoyed thoroughly and they were also given career advices which provided them with a fresh,new and enhanced guidance towards their future by well renowned personalities and scientists. I have been fortunate enough to be a part of distinguished events and activities aiming at society welfare.</p>
+      </div>
+    </div>
+  </div>
+
+  <script >
+    var sliderImages = document.querySelectorAll(".slider-image");
+var sliderPrev = document.querySelector(".slider-prev");
+var sliderNext = document.querySelector(".slider-next");
+var currentImageIndex = 0;
+
+sliderPrev.addEventListener("click", function () {
+  sliderImages[currentImageIndex].classList.remove("active");
+  currentImageIndex =
+    (currentImageIndex - 1 + sliderImages.length) % sliderImages.length;
+  sliderImages[currentImageIndex].classList.add("active");
+});
+
+sliderNext.addEventListener("click", function () {
+  sliderImages[currentImageIndex].classList.remove("active");
+  currentImageIndex = (currentImageIndex + 1) % sliderImages.length;
+  sliderImages[currentImageIndex].classList.add("active");
+});
+  </script>
+
+</body>
+</html>
+<footer>
+        <div class="footer-section">
+          <h10>Address</h10>
+          <div class="x">
+            <p>Q.N. E-4, Jec Staff Colony, Gokalpur,<br> Jabalpur (M.P.) 482011</p>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h14>Phone</h14>
+          <p>09826668891, 07987488829</p>
+        </div>
+        <div class="footer-section">
+          <h11>Email</h11>
+          <p>Kamal_kushwah2005@yahoo.com,<br> kkushwaha@jecjabalpur.ac.in</p>
+        </div>
+        <div class="footer-section">
+          <h12>Follow Us</h12>
+          <ul class="social-icons">
+            <li><a href="https://www.linkedin.com/in/dr-kamal-kumar-kushwah-12b1061a1/"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="https://www.facebook.com/kamalkumar.kushwaha.9"><img src="images/facebook.png" alt="Facebook"></a></li>
+            <li><a href="[Twitter Link]"><img src="images/twitter.png" alt="Twitter"></a></li>
+            <li><a href="https://www.instagram.com/kushwahakamalkumar/"><img src="images/instagram.png" alt="Instagram"></a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h13>Connect with  team</h13>
+          <ul class="creators-list">
+            <li><a href="https://www.linkedin.com/in/harsh-sharma-5439661b0/">Harsh</a></li>
+            <li><a href="https://www.linkedin.com/in/anish-mahore-67659824a/">Anish</a></li>
+            <li><a href="https://www.instagram.com/invites/contact/?i=jtg3712pe2yw&utm_content=ri3iwht">Nikhil</a></li>
+          </ul>
+        </div>
+      </footer>
+
+
+</div>
